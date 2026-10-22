@@ -56,3 +56,19 @@ def test_generator_small_run(spark, tmp_path):
     assert {"none", "burst", "card_test", "stealth"} <= types
     assert d.where("is_fraud = 1").count() > 0
     assert d.select("txn_date").distinct().count() >= 60     # partitioned by day over ~90 days
+
+
+def test_alert_reasons_are_specific_and_readable():
+    from alert_queue import reasons_for
+    base = dict(small_cnt_1h=0, cnt_1h=1, cnt_30d=40, amt_vs_avg=1.0, spend24h_vs_avg=1.0, foreign=0,
+                foreign_rate_30d=0.0, online=0, online_rate_30d=0.5, mcc="grocery", secs_since_prev=86400, hour=14)
+    assert reasons_for(base) == ["unusual combination of signals for this card (see model score)"]
+    burst = reasons_for({**base, "cnt_1h": 5, "amt_vs_avg": 6.2, "foreign": 1, "mcc": "electronics", "secs_since_prev": 40})
+    assert "5 transactions on this card in the last hour" in burst
+    assert "amount is 6.2x this card's 30-day average" in burst
+    assert "foreign transaction on a card that is rarely used abroad" in burst
+    assert any("electronics" in r for r in burst) and any("40s" in r for r in burst)
+    testing = reasons_for({**base, "small_cnt_1h": 4, "cnt_1h": 4})
+    assert testing[0].startswith("4 small charges") and "card-testing" in testing[0]
+    # a new card (little history) shouldn't get "x times its average" reasons
+    assert not any("average" in r for r in reasons_for({**base, "cnt_30d": 1, "amt_vs_avg": 9.0}))

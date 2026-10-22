@@ -30,6 +30,25 @@ What a fraud-strategy lead would ask, answered from the Hive tables:
 - **Where rules fail:** stealth fraud. The rules stop 0% of its value and the model 27%. For burst fraud the figures are 58% vs 90%; for card-testing, 75% vs 97%.
 - **Where fraud concentrates:** electronics is 0.3% of spend but 21% of fraud value. Online foreign transactions run at 665 bps fraud vs 2.8 bps for in-store domestic. These patterns come from how the data was simulated, so treat them as a demonstration of the query, not a finding.
 
+## The analyst's daily queue (`alert_queue.py`)
+
+Model scores don't help a fraud analyst on their own. They need today's list, in priority order, sized to what the team can review, with the reasons for each alert. `alert_queue.py` builds exactly that for any day in the test window:
+
+```bash
+python alert_queue.py data/work 2025-03-15        # -> results/alert_queue_2025-03-15.csv
+```
+
+For 15 March 2025 (110,948 transactions), a 0.2% review budget gives **222 alerts, of which 99 (45%) are real fraud**. The top of the queue:
+
+| # | Amount | Merchant | Score | Why it was flagged |
+|---|---|---|---|---|
+| 1 | ₹4,045 | online marketplace | 0.999 | amount 3.6× the card's 30-day average; 6× the usual ticket spent in 24 h; foreign transaction on a card rarely used abroad; high-risk merchant category; made at 00:00 |
+| 2 | ₹1,722 | restaurant | 0.999 | spent 18× the card's usual ticket in the last 24 hours |
+| 3 | ₹4,142 | electronics | 0.997 | amount 4.7× the 30-day average; foreign; online purchase on a card mostly used in store; high-risk category |
+
+* **Reasons** come from the same attributes the model uses, written as an analyst would say them. Ratio-based reasons are only given for cards with at least 5 transactions of history.
+* **Hindsight columns:** the CSV also includes the true label (`label_hindsight`), so you can see how many alerts were real. A live queue wouldn't have that column.
+
 **Runtime** on a 2-core, 7 GB machine (Spark local mode): features in 65s, training in 85s, scoring 3.3M rows in 30s.
 
 ## Pipeline
@@ -45,7 +64,8 @@ What a fraud-strategy lead would ask, answered from the Hive tables:
    - **Merchant-category risk:** smoothed target encoding, learned on training days only.
    - **Model:** Spark MLlib `GBTClassifier`, trained with legitimate rows down-sampled to 5% and all fraud kept.
    - **Evaluation:** the model is compared with a typical rule set at the **same alert volume**, then at fixed review budgets of 0.1%, 0.2% and 0.5%, with transaction-level, value-level and card-level metrics.
-4. **`insights.py` + `insights.sql`:** loads transactions, features and test scores into a Hive metastore as database `fraud` (`transactions` and `txn_features` partitioned by `txn_date`, 91 partitions), then answers the business questions above in HiveQL. Results go to `results/insights.json`.
+4. **`alert_queue.py`:** the ranked daily review queue with reasons (above).
+5. **`insights.py` + `insights.sql`:** loads transactions, features and test scores into a Hive metastore as database `fraud` (`transactions` and `txn_features` partitioned by `txn_date`, 91 partitions), then answers the business questions above in HiveQL. Results go to `results/insights.json`.
 
 **Top features (GBT importance):** 1-hour velocity (0.32), hour of day (0.12), 24-hour velocity (0.09), merchant-category risk (0.08), time since previous transaction (0.07), 24-hour spend vs the card's average (0.06), foreign surprise (0.06).
 
@@ -62,6 +82,7 @@ pip install -r requirements.txt
 python generate_data.py data/tx 10000000      # ~10M rows, about 190 MB of Parquet
 python train_model.py data/tx data/work        # writes results/results.json and the chart
 python insights.py data/tx data/work           # Hive tables + business queries -> results/insights.json
+python alert_queue.py data/work 2025-03-15      # one day's analyst queue -> results/alert_queue_2025-03-15.csv
 pytest -q                                      # checks the SQL features on a hand-made card history
 ```
 Use a smaller first argument (e.g. `200000`) for a quick test run.

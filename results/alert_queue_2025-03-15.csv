@@ -1,0 +1,223 @@
+priority,txn_id,card_id,amount,mcc,online,foreign,score,reasons,label_hindsight,type_hindsight
+1,25769806150,158639,4045.49,online_marketplace,1,1,0.9988438087816192,"amount is 3.6x this card's 30-day average; spent 6x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad; high-risk merchant category (online marketplace); made at 00:00, between midnight and 5 am",1,burst
+2,17179870017,20594,1722.43,restaurant,1,1,0.9988365405114115,spent 18x the card's usual ticket in the last 24 hours,1,burst
+3,17179870008,20594,4142.36,electronics,1,1,0.9971710439286365,amount is 4.7x this card's 30-day average; foreign transaction on a card that is rarely used abroad; online purchase on a card mostly used in store; high-risk merchant category (electronics),1,burst
+4,17179871843,65626,77.38,restaurant,1,1,0.9967497051462157,foreign transaction on a card that is rarely used abroad,1,card_test
+5,17179870018,20594,3340.43,electronics,0,1,0.9959393139752825,spent 18x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics),1,burst
+6,17179873063,99222,1131.2,electronics,1,1,0.9941461207031511,"spent 5x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad; high-risk merchant category (electronics); only 6s after the previous transaction; made at 00:00, between midnight and 5 am",1,burst
+7,17179870011,20594,1848.32,electronics,1,0,0.9889361069462064,3 transactions on this card in the last hour; spent 8x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics),1,burst
+8,17179870499,33320,4988.01,travel,1,0,0.9889024156887122,4 transactions on this card in the last hour; spent 12x the card's usual ticket in the last 24 hours; high-risk merchant category (travel),1,burst
+9,25769805471,141840,3219.17,utilities,1,1,0.9882832534830237,3 transactions on this card in the last hour; spent 8x the card's usual ticket in the last 24 hours; online purchase on a card mostly used in store,1,burst
+10,17179870496,33320,1992.88,electronics,1,1,0.9874997438737235,5 transactions on this card in the last hour; spent 13x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad; high-risk merchant category (electronics),1,burst
+11,25769804808,126403,2296.23,travel,1,1,0.9868431005688884,3 transactions on this card in the last hour; high-risk merchant category (travel),1,burst
+12,25769805755,148605,118.31,apparel,1,1,0.9860561431615626,foreign transaction on a card that is rarely used abroad; only 95s after the previous transaction,1,card_test
+13,17179872195,73848,2229.51,electronics,1,1,0.9853251489734349,spent 7x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad; high-risk merchant category (electronics),1,burst
+14,25769806310,164298,908.64,electronics,0,1,0.9853111614431389,foreign transaction on a card that is rarely used abroad; high-risk merchant category (electronics),1,burst
+15,25769804810,126403,8356.01,travel,1,1,0.9852856545109132,4 transactions on this card in the last hour; amount is 4.7x this card's 30-day average; spent 9x the card's usual ticket in the last 24 hours; high-risk merchant category (travel),1,burst
+16,17179870020,20594,1886.48,utilities,1,1,0.9836112991216999,3 transactions on this card in the last hour; spent 20x the card's usual ticket in the last 24 hours,1,burst
+17,17179870019,20594,5334.33,utilities,1,1,0.983582002606546,3 transactions on this card in the last hour; amount is 3.2x this card's 30-day average; spent 23x the card's usual ticket in the last 24 hours,1,burst
+18,17179869872,17572,99.39,restaurant,1,1,0.9831484898713961,3 small charges on this card in the last hour (card-testing pattern); 3 transactions on this card in the last hour; only 94s after the previous transaction,1,card_test
+19,25769806315,164298,1657.85,utilities,1,1,0.9831414220215614,4 transactions on this card in the last hour; spent 8x the card's usual ticket in the last 24 hours,1,burst
+20,17179871844,65626,34.85,electronics,1,0,0.9829662545682836,3 small charges on this card in the last hour (card-testing pattern); 3 transactions on this card in the last hour; high-risk merchant category (electronics); only 101s after the previous transaction,1,card_test
+21,25769806319,164298,244.81,electronics,1,0,0.9827551769757445,3 transactions on this card in the last hour; spent 13x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics),1,burst
+22,25769806316,164298,494.16,online_marketplace,1,1,0.9826070366931828,6 transactions on this card in the last hour; spent 13x the card's usual ticket in the last 24 hours; high-risk merchant category (online marketplace),1,burst
+23,25769806317,164298,624.98,travel,1,1,0.9826070366931828,6 transactions on this card in the last hour; spent 12x the card's usual ticket in the last 24 hours; high-risk merchant category (travel),1,burst
+24,25769806318,164298,6272.32,electronics,1,0,0.9825879575573363,7 transactions on this card in the last hour; amount is 8.5x this card's 30-day average; spent 18x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics),1,burst
+25,25769804811,126403,13054.58,online_marketplace,1,0,0.9825879575573363,5 transactions on this card in the last hour; amount is 6.0x this card's 30-day average; spent 14x the card's usual ticket in the last 24 hours; high-risk merchant category (online marketplace),1,burst
+26,25769804809,126403,4576.19,online_marketplace,1,1,0.9825031008955497,5 transactions on this card in the last hour; spent 12x the card's usual ticket in the last 24 hours; high-risk merchant category (online marketplace),1,burst
+27,17179869875,17572,84.41,apparel,1,1,0.9824163172877405,4 small charges on this card in the last hour (card-testing pattern); 4 transactions on this card in the last hour,1,card_test
+28,17179870009,20594,953.96,online_marketplace,1,0,0.9823345628049257,4 transactions on this card in the last hour; spent 8x the card's usual ticket in the last 24 hours; high-risk merchant category (online marketplace),1,burst
+29,25769805474,141840,3027.5,restaurant,1,1,0.9822731393095544,4 transactions on this card in the last hour; spent 10x the card's usual ticket in the last 24 hours; online purchase on a card mostly used in store,1,burst
+30,17179870016,20594,4408.2,travel,1,0,0.9822095159371679,4 transactions on this card in the last hour; amount is 3.0x this card's 30-day average; spent 16x the card's usual ticket in the last 24 hours; high-risk merchant category (travel); only 11s after the previous transaction,1,burst
+31,17179870015,20594,2188.19,electronics,1,0,0.9821649042233874,5 transactions on this card in the last hour; spent 10x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics),1,burst
+32,17179870012,20594,5303.77,electronics,1,0,0.982108758125342,4 transactions on this card in the last hour; amount is 4.2x this card's 30-day average; spent 14x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics),1,burst
+33,25769806313,164298,269.41,electronics,0,1,0.982093823990364,5 transactions on this card in the last hour; spent 8x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics),1,burst
+34,25769804893,128341,2136.9,utilities,1,0,0.9820016013590541,"4 transactions on this card in the last hour; amount is 3.0x this card's 30-day average; spent 9x the card's usual ticket in the last 24 hours; made at 04:00, between midnight and 5 am",1,burst
+35,17179870014,20594,1042.71,fuel,1,0,0.9819659967896341,5 transactions on this card in the last hour; spent 16x the card's usual ticket in the last 24 hours,1,burst
+36,17179870497,33320,1186.33,online_marketplace,1,0,0.9819293006978824,5 transactions on this card in the last hour; spent 16x the card's usual ticket in the last 24 hours; high-risk merchant category (online marketplace),1,burst
+37,17179870013,20594,2001.02,utilities,1,0,0.9818770038674843,3 transactions on this card in the last hour; spent 14x the card's usual ticket in the last 24 hours,1,burst
+38,17179873068,99222,1769.62,apparel,1,1,0.9818511696959108,"6 transactions on this card in the last hour; spent 18x the card's usual ticket in the last 24 hours; made at 01:00, between midnight and 5 am",1,burst
+39,17179870010,20594,3211.33,restaurant,1,1,0.9817877791377075,spent 7x the card's usual ticket in the last 24 hours; online purchase on a card mostly used in store,1,burst
+40,17179873064,99222,1566.59,electronics,1,0,0.9817055206504933,"3 transactions on this card in the last hour; spent 7x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics); made at 00:00, between midnight and 5 am",1,burst
+41,25769806312,164298,877.65,electronics,1,0,0.9816535461161118,6 transactions on this card in the last hour; spent 10x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics); only 15s after the previous transaction,1,burst
+42,25769806153,158639,5512.11,restaurant,1,0,0.9816403416452929,"4 transactions on this card in the last hour; spent 12x the card's usual ticket in the last 24 hours; made at 01:00, between midnight and 5 am",1,burst
+43,17179869876,17572,53.58,apparel,1,0,0.981458717756189,7 small charges on this card in the last hour (card-testing pattern); 7 transactions on this card in the last hour; only 59s after the previous transaction,1,card_test
+44,17179869873,17572,73.79,apparel,1,0,0.981458717756189,5 small charges on this card in the last hour (card-testing pattern); 5 transactions on this card in the last hour; only 4s after the previous transaction,1,card_test
+45,17179869877,17572,143.12,electronics,1,0,0.981458717756189,8 small charges on this card in the last hour (card-testing pattern); 8 transactions on this card in the last hour; high-risk merchant category (electronics); only 14s after the previous transaction,1,card_test
+46,17179871847,65626,175.17,utilities,1,0,0.9814401689004207,4 small charges on this card in the last hour (card-testing pattern); 4 transactions on this card in the last hour; only 21s after the previous transaction,1,card_test
+47,17179873069,99222,9174.34,travel,1,1,0.981417942844958,"7 transactions on this card in the last hour; amount is 13.4x this card's 30-day average; spent 24x the card's usual ticket in the last 24 hours; high-risk merchant category (travel); made at 00:00, between midnight and 5 am",1,burst
+48,17179869874,17572,20.69,pharmacy,1,1,0.9813389906760792,6 small charges on this card in the last hour (card-testing pattern); 6 transactions on this card in the last hour; only 26s after the previous transaction,1,card_test
+49,17179870495,33320,7675.65,restaurant,1,0,0.9812842358403918,5 transactions on this card in the last hour; amount is 4.0x this card's 30-day average; spent 17x the card's usual ticket in the last 24 hours; only 63s after the previous transaction,1,burst
+50,17179872819,92544,63.55,electronics,1,1,0.9809168561457213,5 small charges on this card in the last hour (card-testing pattern); 5 transactions on this card in the last hour; foreign transaction on a card that is rarely used abroad; high-risk merchant category (electronics),1,card_test
+51,17179871845,65626,159.83,travel,1,0,0.9808937205414174,6 small charges on this card in the last hour (card-testing pattern); 6 transactions on this card in the last hour; high-risk merchant category (travel); only 71s after the previous transaction,1,card_test
+52,17179872822,92544,154.86,pharmacy,1,0,0.9808867864990575,6 small charges on this card in the last hour (card-testing pattern); 6 transactions on this card in the last hour,1,card_test
+53,25769804894,128341,1397.1,travel,1,0,0.9808755061950079,"5 transactions on this card in the last hour; spent 10x the card's usual ticket in the last 24 hours; high-risk merchant category (travel); made at 04:00, between midnight and 5 am",1,burst
+54,17179872823,92544,179.12,electronics,1,1,0.9807356121985686,8 small charges on this card in the last hour (card-testing pattern); 8 transactions on this card in the last hour; high-risk merchant category (electronics),1,card_test
+55,17179873066,99222,145.95,travel,1,0,0.9807049551807356,"4 transactions on this card in the last hour; spent 7x the card's usual ticket in the last 24 hours; high-risk merchant category (travel); made at 00:00, between midnight and 5 am",1,burst
+56,17179871846,65626,159.9,electronics,1,1,0.9806193767635253,8 small charges on this card in the last hour (card-testing pattern); 8 transactions on this card in the last hour; high-risk merchant category (electronics); only 30s after the previous transaction,1,card_test
+57,25769804812,126403,6076.62,fuel,1,0,0.9806026489828936,5 transactions on this card in the last hour; spent 14x the card's usual ticket in the last 24 hours,1,burst
+58,17179873065,99222,1014.89,apparel,1,0,0.9805420265259625,"5 transactions on this card in the last hour; spent 9x the card's usual ticket in the last 24 hours; made at 00:00, between midnight and 5 am",1,burst
+59,17179872824,92544,109.27,electronics,1,0,0.9804568693404173,9 small charges on this card in the last hour (card-testing pattern); 9 transactions on this card in the last hour; high-risk merchant category (electronics),1,card_test
+60,17179871848,65626,58.14,fuel,1,1,0.9803998861665507,5 small charges on this card in the last hour (card-testing pattern); 5 transactions on this card in the last hour; foreign transaction on a card that is rarely used abroad; only 75s after the previous transaction,1,card_test
+61,17179872821,92544,85.7,electronics,1,1,0.9803553085383845,7 small charges on this card in the last hour (card-testing pattern); 7 transactions on this card in the last hour; high-risk merchant category (electronics); only 12s after the previous transaction,1,card_test
+62,17179873070,99222,685.38,travel,0,1,0.9803455013276922,"3 transactions on this card in the last hour; spent 20x the card's usual ticket in the last 24 hours; high-risk merchant category (travel); made at 02:00, between midnight and 5 am",1,burst
+63,25769806311,164298,1514.63,apparel,0,1,0.9803442398272915,3 transactions on this card in the last hour; spent 6x the card's usual ticket in the last 24 hours,1,burst
+64,25769805472,141840,2811.0,online_marketplace,1,0,0.9802405403746205,5 transactions on this card in the last hour; spent 11x the card's usual ticket in the last 24 hours; high-risk merchant category (online marketplace); only 96s after the previous transaction,1,burst
+65,17179871849,65626,27.65,pharmacy,1,0,0.9801452145497292,7 small charges on this card in the last hour (card-testing pattern); 7 transactions on this card in the last hour; only 107s after the previous transaction,1,card_test
+66,17179873067,99222,2030.47,electronics,1,1,0.9800485953741699,"6 transactions on this card in the last hour; amount is 3.3x this card's 30-day average; spent 12x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad; high-risk merchant category (electronics); made at 00:00, between midnight and 5 am",1,burst
+67,17179873071,99222,1880.72,travel,1,1,0.9798184742212065,"spent 20x the card's usual ticket in the last 24 hours; high-risk merchant category (travel); made at 02:00, between midnight and 5 am",1,burst
+68,17179871850,65626,106.86,apparel,0,0,0.9796797120910857,10 small charges on this card in the last hour (card-testing pattern); 10 transactions on this card in the last hour,1,card_test
+69,25769806152,158639,8688.82,utilities,1,0,0.9794658253373975,"4 transactions on this card in the last hour; amount is 5.6x this card's 30-day average; spent 13x the card's usual ticket in the last 24 hours; made at 00:00, between midnight and 5 am",1,burst
+70,25769805759,148605,166.37,travel,1,0,0.9792202431739939,8 small charges on this card in the last hour (card-testing pattern); 8 transactions on this card in the last hour; high-risk merchant category (travel),1,card_test
+71,25769805760,148605,63.94,pharmacy,1,1,0.9791376688726686,6 small charges on this card in the last hour (card-testing pattern); 6 transactions on this card in the last hour,1,card_test
+72,25769805761,148605,54.96,electronics,1,0,0.9791029155750613,7 small charges on this card in the last hour (card-testing pattern); 7 transactions on this card in the last hour; high-risk merchant category (electronics); only 4s after the previous transaction,1,card_test
+73,17179872820,92544,145.74,electronics,1,0,0.9790533745782545,4 small charges on this card in the last hour (card-testing pattern); 4 transactions on this card in the last hour; high-risk merchant category (electronics); only 108s after the previous transaction,1,card_test
+74,17179871851,65626,167.35,pharmacy,0,0,0.9788846700107077,9 small charges on this card in the last hour (card-testing pattern); 9 transactions on this card in the last hour,1,card_test
+75,25769805762,148605,90.54,apparel,0,1,0.9788361466466822,9 small charges on this card in the last hour (card-testing pattern); 9 transactions on this card in the last hour,1,card_test
+76,25769805758,148605,21.69,electronics,0,1,0.9788013362597605,4 small charges on this card in the last hour (card-testing pattern); 4 transactions on this card in the last hour; high-risk merchant category (electronics); only 22s after the previous transaction,1,card_test
+77,25769805757,148605,119.58,electronics,0,1,0.9787166974812895,5 small charges on this card in the last hour (card-testing pattern); 5 transactions on this card in the last hour; high-risk merchant category (electronics); only 11s after the previous transaction,1,card_test
+78,25769804891,128341,1600.63,utilities,1,0,0.9786846634416828,"3 transactions on this card in the last hour; spent 6x the card's usual ticket in the last 24 hours; made at 04:00, between midnight and 5 am",1,burst
+79,17179870494,33320,5836.83,grocery,1,0,0.9762744127285456,4 transactions on this card in the last hour; amount is 3.7x this card's 30-day average; spent 10x the card's usual ticket in the last 24 hours,1,burst
+80,25769806151,158639,4179.92,apparel,0,1,0.9746756661554813,"3 transactions on this card in the last hour; amount is 3.1x this card's 30-day average; spent 8x the card's usual ticket in the last 24 hours; only 37s after the previous transaction; made at 00:00, between midnight and 5 am",1,burst
+81,25769804892,128341,961.61,apparel,1,1,0.9744798748900532,"foreign transaction on a card that is rarely used abroad; made at 03:00, between midnight and 5 am",1,burst
+82,17179872817,92544,27.17,pharmacy,1,0,0.9744309225195009,3 small charges on this card in the last hour (card-testing pattern); 3 transactions on this card in the last hour; only 16s after the previous transaction,1,card_test
+83,17179870498,33320,1583.43,pharmacy,1,0,0.9738352512094748,5 transactions on this card in the last hour; spent 10x the card's usual ticket in the last 24 hours,1,burst
+84,25769806314,164298,950.71,fuel,1,1,0.9721138067734173,5 transactions on this card in the last hour; spent 8x the card's usual ticket in the last 24 hours,1,burst
+85,17179873072,99222,769.9,restaurant,0,0,0.9648035972299795,"spent 18x the card's usual ticket in the last 24 hours; made at 02:00, between midnight and 5 am",1,burst
+86,25769804807,126403,1556.54,online_marketplace,1,1,0.962642437346915,high-risk merchant category (online marketplace),1,burst
+87,17179870492,33320,1241.63,pharmacy,1,0,0.960382140504692,3 transactions on this card in the last hour; spent 6x the card's usual ticket in the last 24 hours,1,burst
+88,25769804806,126403,4121.82,travel,1,1,0.9599155948736011,foreign transaction on a card that is rarely used abroad; high-risk merchant category (travel),1,burst
+89,25769806320,164298,1567.74,utilities,1,0,0.9527892626176607,spent 16x the card's usual ticket in the last 24 hours,1,burst
+90,8590081451,55880,1089.85,grocery,1,0,0.9454074574119664,3 transactions on this card in the last hour; spent 6x the card's usual ticket in the last 24 hours,0,none
+91,937050,40830,514.39,electronics,1,1,0.9413381548007005,foreign transaction on a card that is rarely used abroad; high-risk merchant category (electronics),0,none
+92,25769805756,148605,60.29,pharmacy,1,1,0.9342547483144225,3 small charges on this card in the last hour (card-testing pattern); 3 transactions on this card in the last hour; only 35s after the previous transaction,1,card_test
+93,1119635,2,1073.17,grocery,0,0,0.9337677855321965,"spent 6x the card's usual ticket in the last 24 hours; made at 00:00, between midnight and 5 am",0,none
+94,25769805476,141840,3658.55,pharmacy,1,0,0.9289035224870866,spent 14x the card's usual ticket in the last 24 hours,1,burst
+95,8590111831,3677,2971.09,pharmacy,1,0,0.9283100214316427,"3 transactions on this card in the last hour; spent 5x the card's usual ticket in the last 24 hours; made at 01:00, between midnight and 5 am",0,none
+96,17179869870,17572,195.18,electronics,1,0,0.9197258083121573,high-risk merchant category (electronics); only 13s after the previous transaction,1,card_test
+97,2041332,55922,1154.79,grocery,1,0,0.9141480885588937,3 transactions on this card in the last hour,0,none
+98,25769805475,141840,3773.1,grocery,1,0,0.9049102586458188,spent 13x the card's usual ticket in the last 24 hours,1,burst
+99,8590685298,8633,1040.68,pharmacy,0,0,0.8948563129402965,spent 9x the card's usual ticket in the last 24 hours,0,none
+100,8594264368,99222,464.02,restaurant,1,0,0.88740637093803,spent 20x the card's usual ticket in the last 24 hours,0,none
+101,25769805473,141840,5148.96,restaurant,1,1,0.8858936491996536,amount is 5.2x this card's 30-day average; spent 7x the card's usual ticket in the last 24 hours; online purchase on a card mostly used in store,1,burst
+102,8591109873,8633,354.86,restaurant,0,1,0.8584191720646159,spent 9x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad,0,none
+103,2555503,46008,6154.66,electronics,1,0,0.8580179205225786,amount is 3.4x this card's 30-day average; high-risk merchant category (electronics),0,none
+104,304235,55922,2491.88,fuel,0,0,0.8397538448840735,3 transactions on this card in the last hour; spent 6x the card's usual ticket in the last 24 hours,0,none
+105,150318,5365,1322.49,restaurant,1,0,0.8164916216473472,spent 7x the card's usual ticket in the last 24 hours,0,none
+106,8593210330,179181,209.5,pharmacy,1,0,0.813929613832632,spent 9x the card's usual ticket in the last 24 hours,0,none
+107,1618134,91248,4245.89,travel,1,0,0.802295521768086,amount is 3.9x this card's 30-day average; spent 5x the card's usual ticket in the last 24 hours; high-risk merchant category (travel),0,none
+108,8591099879,57619,1634.58,fuel,1,0,0.8015136009337609,3 transactions on this card in the last hour,0,none
+109,176012,99222,386.12,restaurant,1,0,0.7963470222303403,spent 21x the card's usual ticket in the last 24 hours,0,none
+110,17179871842,65626,72.99,electronics,1,0,0.795968461247707,high-risk merchant category (electronics),1,card_test
+111,1363513,14051,5087.29,grocery,1,0,0.7804003268864665,spent 8x the card's usual ticket in the last 24 hours,0,none
+112,3171907,36034,2153.86,travel,1,0,0.7750948733482805,amount is 4.8x this card's 30-day average; high-risk merchant category (travel),0,none
+113,8593518749,8633,2307.32,grocery,0,0,0.7608953482225911,spent 9x the card's usual ticket in the last 24 hours,0,none
+114,4340196,56835,1759.56,electronics,0,1,0.7575210143911046,high-risk merchant category (electronics),0,none
+115,8591707943,69552,3291.01,restaurant,1,0,0.7562484263939885,3 transactions on this card in the last hour; spent 5x the card's usual ticket in the last 24 hours,0,none
+116,8591710013,82782,1430.8,electronics,0,1,0.7543634247201458,foreign transaction on a card that is rarely used abroad; high-risk merchant category (electronics),0,none
+117,8592612094,330,848.29,pharmacy,1,1,0.7302546557203337,"spent 14x the card's usual ticket in the last 24 hours; made at 04:00, between midnight and 5 am",0,none
+118,996790,55880,4014.24,restaurant,0,1,0.7258354701521517,spent 6x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad,0,none
+119,8594886601,48535,3164.25,grocery,1,0,0.7157831971303684,3 transactions on this card in the last hour; spent 5x the card's usual ticket in the last 24 hours; online purchase on a card mostly used in store,0,none
+120,1985200,74706,1273.62,electronics,0,1,0.6978408333696258,high-risk merchant category (electronics),0,none
+121,8589993228,2899,2201.55,pharmacy,0,0,0.6966285798547136,spent 7x the card's usual ticket in the last 24 hours,0,none
+122,17179872818,92544,131.68,grocery,1,0,0.6964206665762132,only 5s after the previous transaction,1,card_test
+123,3843223,61169,1163.1,apparel,1,1,0.6817134740578972,"spent 5x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad; made at 02:00, between midnight and 5 am",0,none
+124,8593248033,16634,1124.25,fuel,1,0,0.6816374929996731,unusual combination of signals for this card (see model score),0,none
+125,8591246298,19714,5428.5,restaurant,0,0,0.6686397020347649,spent 6x the card's usual ticket in the last 24 hours,0,none
+126,4712553,123696,593.42,utilities,1,0,0.6368468690764891,3 transactions on this card in the last hour,0,none
+127,1969420,8633,1185.47,restaurant,0,0,0.6290594571675159,spent 9x the card's usual ticket in the last 24 hours,0,none
+128,8590728223,733,720.82,restaurant,0,0,0.6185999102879334,spent 7x the card's usual ticket in the last 24 hours,0,none
+129,8593264223,64703,143.6,electronics,0,0,0.6068470100316321,high-risk merchant category (electronics),0,none
+130,17179870493,33320,2907.11,utilities,1,0,0.6046851599336469,spent 5x the card's usual ticket in the last 24 hours,1,burst
+131,8592362668,167878,39.47,fuel,1,1,0.6039388426405965,"foreign transaction on a card that is rarely used abroad; made at 02:00, between midnight and 5 am",0,none
+132,1137122,113160,122.46,pharmacy,0,0,0.599372541575126,"spent 6x the card's usual ticket in the last 24 hours; made at 02:00, between midnight and 5 am",0,none
+133,4430747,6739,113.17,grocery,0,0,0.5959344664204553,3 transactions on this card in the last hour,0,none
+134,8590630246,404,1077.43,pharmacy,1,0,0.589245850725473,"3 transactions on this card in the last hour; made at 00:00, between midnight and 5 am",0,none
+135,4548451,150829,184.14,grocery,0,0,0.5734866562873996,unusual combination of signals for this card (see model score),0,none
+136,1579353,16605,1495.82,fuel,1,1,0.5657301703718424,foreign transaction on a card that is rarely used abroad; online purchase on a card mostly used in store,0,none
+137,3690284,4155,4326.05,electronics,1,1,0.5624107407036566,high-risk merchant category (electronics),0,none
+138,2567592,100734,1781.26,grocery,1,0,0.5598905493639206,spent 6x the card's usual ticket in the last 24 hours,0,none
+139,3365699,171089,5536.47,pharmacy,1,1,0.5555425129136637,"amount is 4.0x this card's 30-day average; foreign transaction on a card that is rarely used abroad; made at 01:00, between midnight and 5 am",0,none
+140,8589972732,89660,7915.44,grocery,1,1,0.5537581679922398,spent 6x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad,0,none
+141,8593086116,8209,39.2,fuel,1,1,0.5452661518961033,foreign transaction on a card that is rarely used abroad,0,none
+142,8593999136,64475,7763.62,electronics,1,0,0.5327317678377139,"amount is 4.6x this card's 30-day average; high-risk merchant category (electronics); made at 00:00, between midnight and 5 am",0,none
+143,8592640765,171466,98.99,fuel,0,0,0.5205302497183089,unusual combination of signals for this card (see model score),0,none
+144,3890895,54730,4689.34,fuel,1,1,0.5131164142029732,"amount is 5.2x this card's 30-day average; spent 5x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad; made at 03:00, between midnight and 5 am",0,none
+145,8591858349,110,434.44,pharmacy,0,0,0.4974523240495543,spent 10x the card's usual ticket in the last 24 hours,0,none
+146,1077289,25316,16701.05,restaurant,1,1,0.49547636758202707,amount is 5.3x this card's 30-day average; spent 5x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad,0,none
+147,2649576,20653,804.4,restaurant,0,0,0.4939592416937023,unusual combination of signals for this card (see model score),0,none
+148,1059987,21215,1807.4,pharmacy,0,0,0.4926498299562574,"spent 8x the card's usual ticket in the last 24 hours; made at 01:00, between midnight and 5 am",0,none
+149,126484,61682,2997.67,utilities,1,1,0.48888377198341226,foreign transaction on a card that is rarely used abroad,0,none
+150,1991110,127623,152.22,electronics,0,0,0.48272260874414097,high-risk merchant category (electronics),0,none
+151,8592173864,69641,1188.86,apparel,1,0,0.48234839623987336,3 transactions on this card in the last hour,0,none
+152,2979988,5392,1222.72,pharmacy,0,0,0.4823304494888859,unusual combination of signals for this card (see model score),0,none
+153,3200825,0,358.99,restaurant,0,0,0.4759127933664802,"spent 5x the card's usual ticket in the last 24 hours; made at 04:00, between midnight and 5 am",0,none
+154,2927915,27554,587.07,grocery,1,0,0.47487478665041183,online purchase on a card mostly used in store,0,none
+155,2669200,110218,794.8,travel,1,0,0.4722697231221362,high-risk merchant category (travel),0,none
+156,8593758935,195377,91.19,electronics,0,0,0.4709316894390999,high-risk merchant category (electronics),0,none
+157,1003773,16605,2336.0,grocery,0,1,0.4686639858392778,spent 6x the card's usual ticket in the last 24 hours,0,none
+158,4854933,114726,949.77,restaurant,0,0,0.46854231924403866,"3 transactions on this card in the last hour; made at 00:00, between midnight and 5 am",0,none
+159,2268033,116118,185.09,electronics,1,0,0.45681345049151023,online purchase on a card mostly used in store; high-risk merchant category (electronics),0,none
+160,907968,73468,23217.27,fuel,1,1,0.45193740400693316,amount is 18.3x this card's 30-day average; spent 18x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad; online purchase on a card mostly used in store,0,none
+161,3501334,4898,252.11,fuel,1,0,0.4436082680065012,4 transactions on this card in the last hour,0,none
+162,608494,0,205.09,fuel,0,0,0.4391862423625448,spent 6x the card's usual ticket in the last 24 hours,0,none
+163,8590166136,13966,761.22,grocery,0,0,0.4382930304776541,spent 6x the card's usual ticket in the last 24 hours,0,none
+164,8593012305,149881,5379.36,fuel,0,0,0.4363063762654651,3 transactions on this card in the last hour,0,none
+165,8592481184,78867,127.85,electronics,1,0,0.4324284091411583,high-risk merchant category (electronics),0,none
+166,1743847,5365,693.77,fuel,1,0,0.4229784422716252,"spent 6x the card's usual ticket in the last 24 hours; made at 02:00, between midnight and 5 am",0,none
+167,8590333513,23419,1921.92,grocery,0,0,0.4224516567470158,spent 6x the card's usual ticket in the last 24 hours,0,none
+168,8593218481,37664,2132.97,pharmacy,1,0,0.4147557756173619,"spent 10x the card's usual ticket in the last 24 hours; made at 00:00, between midnight and 5 am",0,none
+169,8592922061,62210,5763.79,pharmacy,1,1,0.40850759351918553,unusual combination of signals for this card (see model score),0,none
+170,8594046445,81410,345.5,pharmacy,0,0,0.40841468245918666,"3 transactions on this card in the last hour; made at 00:00, between midnight and 5 am",0,none
+171,8593982716,32815,141.91,electronics,0,0,0.4080797172539864,high-risk merchant category (electronics),0,none
+172,3620611,133141,160.33,electronics,0,0,0.4080797172539864,high-risk merchant category (electronics),0,none
+173,8591465095,2,696.56,fuel,1,0,0.4069118377628046,spent 5x the card's usual ticket in the last 24 hours,0,none
+174,4627999,122982,16661.76,fuel,1,1,0.4033046696106424,amount is 6.0x this card's 30-day average; spent 6x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad,0,none
+175,8592853898,99966,5196.42,pharmacy,0,1,0.40293864031645554,foreign transaction on a card that is rarely used abroad,0,none
+176,8591587031,49739,6943.94,electronics,1,0,0.40097768205352213,amount is 5.4x this card's 30-day average; spent 7x the card's usual ticket in the last 24 hours; high-risk merchant category (electronics),0,none
+177,3865087,25796,3660.54,grocery,1,0,0.39136122211658453,unusual combination of signals for this card (see model score),0,none
+178,8590308667,96507,1534.38,fuel,1,0,0.391103131524585,unusual combination of signals for this card (see model score),0,none
+179,1668334,30704,345.45,restaurant,0,0,0.3865710561532416,"made at 02:00, between midnight and 5 am",0,none
+180,4460156,68561,5364.85,apparel,1,0,0.37430940441958793,online purchase on a card mostly used in store,0,none
+181,2012010,16605,763.16,restaurant,0,1,0.37366403030270345,spent 6x the card's usual ticket in the last 24 hours,0,none
+182,8594272491,35499,15555.45,grocery,0,1,0.3703846255671368,amount is 6.3x this card's 30-day average; spent 6x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad,0,none
+183,4002164,16634,616.56,fuel,1,0,0.3578387503083581,only 61s after the previous transaction,0,none
+184,8590118491,139377,7117.21,fuel,0,1,0.35671092237162605,amount is 3.1x this card's 30-day average; foreign transaction on a card that is rarely used abroad,0,none
+185,8590701616,145298,692.0,electronics,1,0,0.35629509844894414,high-risk merchant category (electronics),0,none
+186,596918,74244,1118.47,grocery,0,0,0.35209371565967007,unusual combination of signals for this card (see model score),0,none
+187,8590269732,161431,7776.51,fuel,1,1,0.35025975818500443,amount is 5.2x this card's 30-day average; spent 7x the card's usual ticket in the last 24 hours,0,none
+188,8594593811,54077,997.09,pharmacy,0,0,0.3501137345475288,spent 5x the card's usual ticket in the last 24 hours,0,none
+189,998801,191345,663.31,restaurant,0,0,0.34887727121598977,"made at 04:00, between midnight and 5 am",0,none
+190,2919491,35091,532.39,fuel,0,0,0.3459127104746005,spent 5x the card's usual ticket in the last 24 hours,0,none
+191,8592988372,2494,1089.11,apparel,1,1,0.34451350187857077,foreign transaction on a card that is rarely used abroad,0,none
+192,8590905382,13966,1078.24,pharmacy,0,0,0.3413957544000842,"made at 04:00, between midnight and 5 am",0,none
+193,1701163,181029,69.44,restaurant,1,0,0.339632245303668,"made at 02:00, between midnight and 5 am",0,none
+194,8593012290,31254,6474.88,online_marketplace,1,0,0.3391962929420902,"high-risk merchant category (online marketplace); made at 02:00, between midnight and 5 am",0,none
+195,8592978637,2183,8542.4,grocery,1,1,0.3386934492066941,amount is 3.7x this card's 30-day average; spent 5x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad,0,none
+196,8592926181,7804,1260.05,restaurant,0,0,0.33742586337240743,"made at 04:00, between midnight and 5 am",0,none
+197,8591191489,114173,918.86,restaurant,0,0,0.33551815175868815,unusual combination of signals for this card (see model score),0,none
+198,3667033,50368,96.8,apparel,0,1,0.33431273239461845,unusual combination of signals for this card (see model score),0,none
+199,8593993575,99,220.08,pharmacy,0,0,0.33123587261549325,unusual combination of signals for this card (see model score),0,none
+200,8590980185,24514,1981.75,apparel,0,0,0.3249909941606778,"made at 02:00, between midnight and 5 am",0,none
+201,3063902,32342,335.38,fuel,0,0,0.3211221674737289,unusual combination of signals for this card (see model score),0,none
+202,3843469,76243,1648.71,electronics,1,0,0.32104535588215655,"amount is 3.1x this card's 30-day average; high-risk merchant category (electronics); made at 03:00, between midnight and 5 am",0,none
+203,8593831354,49727,2400.93,electronics,1,0,0.32104535588215655,"amount is 3.3x this card's 30-day average; high-risk merchant category (electronics); made at 00:00, between midnight and 5 am",0,none
+204,8590982294,86372,96.85,restaurant,1,1,0.31419651835189577,foreign transaction on a card that is rarely used abroad; online purchase on a card mostly used in store,0,none
+205,8591463702,23020,135.88,apparel,0,0,0.31384144415989446,unusual combination of signals for this card (see model score),0,none
+206,8590810007,132013,2118.47,fuel,1,0,0.3108845063903418,3 transactions on this card in the last hour,0,none
+207,257019,174947,219.2,restaurant,0,0,0.3071536488993635,only 3s after the previous transaction,0,none
+208,8592580748,21156,1334.07,online_marketplace,1,0,0.30656227090933386,high-risk merchant category (online marketplace),0,none
+209,679343,145571,225.48,restaurant,1,0,0.3062931203822459,spent 7x the card's usual ticket in the last 24 hours,0,none
+210,8591538149,44340,13441.31,grocery,0,0,0.3015505011412919,"made at 00:00, between midnight and 5 am",0,none
+211,17179872816,92544,155.66,fuel,1,1,0.30147107096669434,foreign transaction on a card that is rarely used abroad,1,card_test
+212,3951406,10908,5413.33,restaurant,1,0,0.30133884144491396,spent 6x the card's usual ticket in the last 24 hours,0,none
+213,1864969,38907,1105.27,fuel,0,0,0.29930502703591366,unusual combination of signals for this card (see model score),0,none
+214,17179869871,17572,188.48,pharmacy,1,1,0.29425985778390473,foreign transaction on a card that is rarely used abroad,1,card_test
+215,8592512236,14270,1999.75,restaurant,0,1,0.2940811071031777,spent 6x the card's usual ticket in the last 24 hours; foreign transaction on a card that is rarely used abroad,0,none
+216,2705909,101251,2028.79,fuel,0,1,0.293279113813641,spent 5x the card's usual ticket in the last 24 hours,0,none
+217,3807115,112924,3701.21,online_marketplace,1,0,0.293080732103299,online purchase on a card mostly used in store; high-risk merchant category (online marketplace),0,none
+218,8592753781,96016,1118.61,grocery,0,0,0.29088501955072965,"made at 04:00, between midnight and 5 am",0,none
+219,8592924368,26802,2269.26,fuel,1,0,0.28926359284905,unusual combination of signals for this card (see model score),0,none
+220,4421880,102179,968.0,fuel,0,0,0.2884624565059015,spent 6x the card's usual ticket in the last 24 hours,0,none
+221,8594551026,15229,2389.62,electronics,1,0,0.2882452876451951,high-risk merchant category (electronics),0,none
+222,4358177,8,1650.34,restaurant,1,0,0.28677479811391804,unusual combination of signals for this card (see model score),0,none
