@@ -1,5 +1,7 @@
 # Card Fraud Analytics at Scale (PySpark)
 
+[![tests](https://github.com/Drakeion2532/card-fraud-analytics-spark/actions/workflows/tests.yml/badge.svg)](https://github.com/Drakeion2532/card-fraud-analytics-spark/actions/workflows/tests.yml)
+
 An end-to-end fraud pipeline on **10 million card transactions** (200,000 cardholders, 90 days) in PySpark: **Hive tables** partitioned by day, behavioural attributes written as **Spark SQL window functions**, a **Spark MLlib gradient-boosted model**, a head-to-head comparison against fraud rules **at the same alert budget**, and **HiveQL business queries** that turn model scores into review workload and losses prevented.
 
 ![Recall vs review rate](results/recall_vs_review_rate.png)
@@ -60,5 +62,6 @@ pip install -r requirements.txt
 python generate_data.py data/tx 10000000      # ~10M rows, about 190 MB of Parquet
 python train_model.py data/tx data/work        # writes results/results.json and the chart
 python insights.py data/tx data/work           # Hive tables + business queries -> results/insights.json
+pytest -q                                      # checks the SQL features on a hand-made card history
 ```
 Use a smaller first argument (e.g. `200000`) for a quick test run.
