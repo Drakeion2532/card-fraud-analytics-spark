@@ -1,0 +1,137 @@
+{
+  "hive_tables": {
+    "test_scores": 3336779,
+    "transactions": 10007772,
+    "txn_features": 10007772
+  },
+  "partitions_transactions": 91,
+  "alert_threshold_for_0.2pct_budget": 0.2367,
+  "fraud_by_merchant_category": [
+    {
+      "mcc": "electronics",
+      "pct_of_fraud_value": 20.8,
+      "pct_of_all_spend": 0.3,
+      "fraud_bps": 418.27
+    },
+    {
+      "mcc": "apparel",
+      "pct_of_fraud_value": 14.2,
+      "pct_of_all_spend": 4.9,
+      "fraud_bps": 19.52
+    },
+    {
+      "mcc": "restaurant",
+      "pct_of_fraud_value": 12.3,
+      "pct_of_all_spend": 25.7,
+      "fraud_bps": 4.26
+    },
+    {
+      "mcc": "utilities",
+      "pct_of_fraud_value": 10.9,
+      "pct_of_all_spend": 1.5,
+      "fraud_bps": 52.02
+    },
+    {
+      "mcc": "pharmacy",
+      "pct_of_fraud_value": 10.4,
+      "pct_of_all_spend": 12.0,
+      "fraud_bps": 7.14
+    },
+    {
+      "mcc": "travel",
+      "pct_of_fraud_value": 9.3,
+      "pct_of_all_spend": 0.1,
+      "fraud_bps": 1296.63
+    },
+    {
+      "mcc": "fuel",
+      "pct_of_fraud_value": 9.2,
+      "pct_of_all_spend": 29.6,
+      "fraud_bps": 3.2
+    },
+    {
+      "mcc": "grocery",
+      "pct_of_fraud_value": 6.9,
+      "pct_of_all_spend": 26.0,
+      "fraud_bps": 2.77
+    },
+    {
+      "mcc": "online_marketplace",
+      "pct_of_fraud_value": 4.7,
+      "pct_of_all_spend": 0.0,
+      "fraud_bps": 3626.49
+    },
+    {
+      "mcc": "gift_cards",
+      "pct_of_fraud_value": 1.1,
+      "pct_of_all_spend": 0.0,
+      "fraud_bps": 9206.35
+    }
+  ],
+  "fraud_by_channel": [
+    {
+      "channel": "online",
+      "geo": "foreign",
+      "txns": 30744,
+      "fraud_bps": 664.85
+    },
+    {
+      "channel": "in-store",
+      "geo": "foreign",
+      "txns": 35532,
+      "fraud_bps": 104.98
+    },
+    {
+      "channel": "online",
+      "geo": "domestic",
+      "txns": 4473403,
+      "fraud_bps": 8.53
+    },
+    {
+      "channel": "in-store",
+      "geo": "domestic",
+      "txns": 5468093,
+      "fraud_bps": 2.81
+    }
+  ],
+  "rules_vs_model_by_fraud_type": [
+    {
+      "fraud_type": "burst",
+      "fraud_txns": 1341,
+      "fraud_value": 8347229.0,
+      "pct_value_caught_rules": 58.3,
+      "pct_value_caught_model": 90.1
+    },
+    {
+      "fraud_type": "stealth",
+      "fraud_txns": 468,
+      "fraud_value": 724840.0,
+      "pct_value_caught_rules": 0.0,
+      "pct_value_caught_model": 26.7
+    },
+    {
+      "fraud_type": "card_test",
+      "fraud_txns": 623,
+      "fraud_value": 64975.0,
+      "pct_value_caught_rules": 74.7,
+      "pct_value_caught_model": 96.5
+    }
+  ],
+  "daily_review_workload": [
+    {
+      "avg_alerts_per_day": 215.0,
+      "peak_alerts_per_day": 267,
+      "avg_fraud_caught_per_day": 62.0,
+      "pct_alerts_that_are_fraud": 28.9
+    }
+  ],
+  "loss_view_test_window": [
+    {
+      "total_fraud_value": 9137043.0,
+      "caught_by_rules": 4917980.0,
+      "caught_by_model": 7773927.0,
+      "rule_alerts_on_fraud": 1148,
+      "model_alerts_on_fraud": 1927
+    }
+  ]
+}

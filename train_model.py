@@ -69,7 +69,7 @@ def main(tx_dir, work):
     OUT.mkdir(exist_ok=True)
     timings = {}
     spark = (SparkSession.builder.master("local[*]").appName("card-fraud-model")
-             .config("spark.ui.enabled", "false").config("spark.driver.memory", "5g")
+             .config("spark.ui.enabled", "false").config("spark.driver.memory", "4g")
              .config("spark.sql.shuffle.partitions", "32").getOrCreate())
     spark.sparkContext.setLogLevel("ERROR")
 
@@ -102,7 +102,10 @@ def main(tx_dir, work):
     scored = (model.transform(test)
               .withColumn("score", vector_to_array("probability")[1])
               .withColumn("rule_flag", rules(test)))
-    pdf = scored.select("card_id", "ts", "amount", "is_fraud", "fraud_type", "score", "rule_flag").toPandas()
+    (scored.select("txn_id", "card_id", "ts", "amount", "is_fraud", "fraud_type", "score", "rule_flag")
+     .write.mode("overwrite").parquet(f"{work}/test_scores"))
+    import pandas as pd  # read directly with pyarrow: far less memory than collecting through Spark
+    pdf = pd.read_parquet(f"{work}/test_scores")
     timings["scoring_s"] = round(time.time() - t)
 
     report = {"transactions": int(counts["n"]), "fraud_transactions": int(counts["f"]),

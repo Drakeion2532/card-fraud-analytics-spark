@@ -6,9 +6,9 @@
   "test_rows": 3336779,
   "split": "train days 1-60, test days 61-90",
   "timings": {
-    "feature_engineering_s": 65,
-    "model_training_s": 85,
-    "scoring_s": 30
+    "feature_engineering_s": 68,
+    "model_training_s": 90,
+    "scoring_s": 15
   },
   "rules": {
     "alert_rate": 0.00339,
