@@ -1,3 +1,4 @@
+-- Copyright (c) 2026 Shubhan Punde · https://github.com/Drakeion2532/card-fraud-analytics-spark · MIT licence · sp2532-35f770e709ac
 -- Per-transaction behavioural features, computed only from each card's PAST activity.
 -- Input view: tx(card_id, ts, amount, mcc, online, foreign, is_fraud, fraud_type, txn_id, txn_date)
 WITH w AS (

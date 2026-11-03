@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Shubhan Punde · https://github.com/Drakeion2532/card-fraud-analytics-spark · MIT licence · sp2532-35f770e709ac
 """Load the pipeline outputs into Hive tables and answer business questions in HiveQL.
 
 Creates database `fraud` with:

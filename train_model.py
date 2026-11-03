@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Shubhan Punde · https://github.com/Drakeion2532/card-fraud-analytics-spark · MIT licence · sp2532-35f770e709ac
 """Build features with Spark SQL, train a Spark MLlib gradient-boosted model, and compare it
 with hand-written fraud rules at the same alert budget.
 

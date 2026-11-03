@@ -86,3 +86,9 @@ python alert_queue.py data/work 2025-03-15      # one day's analyst queue -> res
 pytest -q                                      # checks the SQL features on a hand-made card history
 ```
 Use a smaller first argument (e.g. `200000`) for a quick test run.
+
+## Licence and credit
+
+MIT © 2026 [Shubhan Punde](https://github.com/Drakeion2532). You're welcome to learn from and reuse this code; the licence requires keeping the copyright notice, and presenting the project as your own work is not permitted. To cite it, use [CITATION.cff](CITATION.cff).
+
+<sub>Project ID: sp2532-35f770e709ac</sub>
