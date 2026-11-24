@@ -1,4 +1,4 @@
--- Copyright (c) 2026 Shubhan Punde · https://github.com/Drakeion2532/card-fraud-analytics-spark · MIT licence · sp2532-35f770e709ac
+-- Copyright (c) 2026 Shubhan Punde · MIT licence
 -- @fraud_by_merchant_category
 -- Where is fraud concentrated? Share of fraud value vs share of all spend, by merchant category.
 SELECT mcc,

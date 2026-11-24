@@ -1,4 +1,4 @@
-# Copyright (c) 2026 Shubhan Punde · https://github.com/Drakeion2532/card-fraud-analytics-spark · MIT licence · sp2532-35f770e709ac
+# Copyright (c) 2026 Shubhan Punde · MIT licence
 """Build the day's fraud-review queue: what an analyst team actually works from.
 
 Model scores alone don't help an analyst. They need a short list, in priority order, sized to

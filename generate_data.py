@@ -1,4 +1,4 @@
-# Copyright (c) 2026 Shubhan Punde · https://github.com/Drakeion2532/card-fraud-analytics-spark · MIT licence · sp2532-35f770e709ac
+# Copyright (c) 2026 Shubhan Punde · MIT licence
 """Simulate ~10M card transactions (200K cardholders, 90 days) with injected fraud, in PySpark.
 
 Legitimate spend: each card has its own typical amount, a mix of merchant categories,

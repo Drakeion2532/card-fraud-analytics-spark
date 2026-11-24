@@ -9,7 +9,3 @@ authors:
 repository-code: "https://github.com/Drakeion2532/card-fraud-analytics-spark"
 license: MIT
 date-released: "2026-11-03"
-identifiers:
-  - type: other
-    value: "sp2532-35f770e709ac"
-    description: "Project identifier"
