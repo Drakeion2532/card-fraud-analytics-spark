@@ -1,7 +1,8 @@
+# Versions tested in CI (Python 3.11)
 pyspark==3.5.3
-pandas
-numpy
-scikit-learn
-matplotlib
-pyarrow
-pytest
+pandas==3.1.1
+numpy==2.4.6
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pyarrow==26.0.1
+pytest==9.2.0
